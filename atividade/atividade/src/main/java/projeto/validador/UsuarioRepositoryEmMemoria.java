@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /** Implementação simples em memória, usada no lugar de um banco real. */
+
 public class UsuarioRepositoryEmMemoria implements UsuarioRepository {
 
     private final Map<String, Usuario> usuarios = new HashMap<>();

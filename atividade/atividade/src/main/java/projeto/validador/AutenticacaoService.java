@@ -1,6 +1,7 @@
 package projeto.validador;
 
-/** RF04, RF05, RF06 e RF07 - Autenticação com bloqueio por tentativas. */
+/** RF04, RF05, RF06 e RF07 - Autenticação com bloqueio por tentativas */
+
 public class AutenticacaoService {
 
     public static final int MAX_TENTATIVAS = 3;
@@ -11,14 +12,14 @@ public class AutenticacaoService {
         this.repositorio = repositorio;
     }
 
-    /**
-     * @return o usuário autenticado
-     * @throws CamposVaziosException       login ou senha nulos/vazios (RF04)
-     * @throws UsuarioInexistenteException login não cadastrado (RF05)
-     * @throws ContaBloqueadaException     conta bloqueada, mesmo com senha correta (RF07)
-     * @throws SenhaInvalidaException      senha incorreta (RF05)
-     * @throws ErroConexaoBancoException   falha no repositório (RF06)
-     */
+    
+      @return 
+      @throws CamposVaziosException      
+      @throws UsuarioInexistenteException 
+      @throws ContaBloqueadaException     
+      @throws SenhaInvalidaException     
+      @throws ErroConexaoBancoException   
+     
     public Usuario autenticar(String login, String senha) {
         if (login == null || login.isBlank() || senha == null || senha.isBlank()) {
             throw new CamposVaziosException();

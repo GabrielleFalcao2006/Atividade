@@ -1,6 +1,7 @@
 package projeto.validador;
 
 /** RF01 - Cadastro de usuário. */
+
 public class CadastroService {
 
     private final UsuarioRepository repositorio;
@@ -10,7 +11,7 @@ public class CadastroService {
         this.repositorio = repositorio;
     }
 
-    /** @return true se cadastrou; false se algum campo é inválido ou o login já existe. */
+     @return
     public boolean cadastrar(String nome, String login, String senha, String email, NivelUsuario nivel) {
         if (vazio(nome) || vazio(login) || vazio(senha) || vazio(email) || nivel == null) {
             return false;

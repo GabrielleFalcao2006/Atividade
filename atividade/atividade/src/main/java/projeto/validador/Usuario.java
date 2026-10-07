@@ -1,6 +1,7 @@
 package projeto.validador;
 
 /** RF01 - Dados do usuário, mais estado de bloqueio (RF07) e nível (RF08). */
+
 public class Usuario {
 
     private final String nome;
